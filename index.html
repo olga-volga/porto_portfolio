@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Porto Portfolio</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.header__burger').click(function(event) {
+					$('.header__burger, .header__menu').toggleClass('active');
+					$('body').toggleClass('lock');
+				});
+				$('.header__menu').click(function(event) {
+					$('.header__burger, .header__menu').removeClass('active');
+					$('body').removeClass('lock');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="main">
+				<div class="container">
+					<div class="header-body">
+						<a href="" class="header__logo">Portfolio</a>
+						<div class="header__burger">
+							<span></span>
+						</div>
+						<nav class="header__menu">
+							<ul class="header__list">
+								<li><a href="" class="header__link header__link--b">Home</a></li>
+								<li><a href="#about" class="header__link">About</a></li>
+								<li><a href="#skills" class="header__link">Skills</a></li>
+								<li><a href="#portfolio" class="header__link">Portfolio</a></li>
+								<li><a href="#contact" class="header__link">Contact</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="main-body">
+						<h1 class="main__title">Hi, It’s Théophile Seyrig</h1>
+						<p class="main__subtitle">Designer from Porto, Portugal</p>
+						<a href="#portfolio" class="main__link">Latest works</a>
+					</div>
+				</div>
+			</main>
+			<div class="content">
+				<section class="about" id="about">
+					<div class="container">
+						<h2 class="about__title title--h2">About</h2>
+						<p class="about__text text">Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis.</p>
+						<p class="about__text text">Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. diam penatibus aliquet tellus, in rutrum augue. Pellentesque.</p>
+					</div>
+				</section>
+				<section class="skills" id="skills">
+					<div class="container">
+						<h2 class="skills__title title--h2">Skills</h2>
+						<div class="skills-row">
+							<div class="skills-img">
+								<div class="skills__img"></div>
+								<img src="img/skills/01.jpg" alt="">
+							</div>
+							<div class="skills-column">
+								<div class="skills-item">
+									<div class="skills-item-row row--title">
+										<div class="skills-item-subtitle">
+											<h3 class="skills-item__subtitle subtitle--h3">Profile</h3>
+										</div>
+										<div class="skills-item-text">
+											<p class="skills-item__text">UI / UX Engineer, Front-end Developer</p>
+										</div>
+									</div>
+									<div class="skills-item-body">
+										<div class="skills-item-row">
+											<div class="skills-item-subtitle">
+												<h3 class="skills-item__subtitle subtitle--h3">UX Research</h3>
+											</div>
+											<div class="skills-item-text">
+												<div class="skills-item-box">
+													<div class="skills-item__box box--y">
+														<div class="skills-item__box box--b box--b--1"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="skills-item-row">
+											<div class="skills-item-subtitle">
+												<h3 class="skills-item__subtitle subtitle--h3">Tools</h3>
+											</div>
+											<div class="skills-item-text">
+												<p class="skills-item__text">Paper, Pen, Balsamiq</p>
+											</div>
+										</div>
+									</div>
+									<div class="skills-item-body">
+										<div class="skills-item-row">
+											<div class="skills-item-subtitle">
+												<h3 class="skills-item__subtitle subtitle--h3">UI Design</h3>
+											</div>
+											<div class="skills-item-text">
+												<div class="skills-item-box">
+													<div class="skills-item__box box--y">
+														<div class="skills-item__box box--b box--b--2"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="skills-item-row">
+											<div class="skills-item-subtitle">
+												<h3 class="skills-item__subtitle subtitle--h3">Tools</h3>
+											</div>
+											<div class="skills-item-text">
+												<p class="skills-item__text">Adobe PS, AI, XD, Figma, InVision</p>
+											</div>
+										</div>
+									</div>
+									<div class="skills-item-body">
+										<div class="skills-item-row">
+											<div class="skills-item-subtitle">
+												<h3 class="skills-item__subtitle subtitle--h3">Front-end Dev</h3>
+											</div>
+											<div class="skills-item-text">
+												<div class="skills-item-box">
+													<div class="skills-item__box box--y">
+														<div class="skills-item__box box--b box--b--3"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="skills-item-row">
+											<div class="skills-item-subtitle">
+												<h3 class="skills-item__subtitle subtitle--h3">Tools</h3>
+											</div>
+											<div class="skills-item-text">
+												<p class="skills-item__text">HTML, CSS, JS, Bootstrap, React</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="portfolio" id="portfolio">
+					<div class="container">
+						<h2 class="portfolio__title title--h2">Portfolio</h2>
+						<h3 class="portfolio-column__subtitle subtitle--h3">UX Research</h3>
+						<div class="portfolio-row">
+							<div class="portfolio-column-text">
+								<div class="portfolio-column-item">
+									<p class="portfolio-column__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.</p>
+									<div class="portfolio-column-btn">
+										<a href="" class="portfolio-column__btn btn--l">
+											<i class="fa fa-angle-left"></i>
+										</a>
+										<a href="" class="portfolio-column__btn btn--r">
+											<i class="fa fa-angle-right"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio-column-img">
+								<div class="portfolio-column-body">
+									<div class="portfolio-column-body-left">
+										<img src="img/portfolio/01.jpg" alt="">
+										<img src="img/portfolio/02.jpg" alt="">
+									</div>
+									<div class="portfolio-column-body-right">
+										<img src="img/portfolio/03.jpg" alt="">
+										<img src="img/portfolio/04.jpg" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			<footer class="footer" id="contact">
+				<div class="container">
+					<h2 class="footer__title title--h2">Get in Touch</h2>
+					<div class="footer-row">
+						<div class="footer-column-social">
+							<div class="footer-column-item">
+								<a href="" class="footer__link">Dribbble</a>
+								<a href="" class="footer__link">Behance</a>
+								<a href="" class="footer__link">CodePen</a>
+								<a href="" class="footer__link">GitHub</a>
+								<a href="" class="footer__link">Medium</a>
+							</div>
+						</div>
+						<div class="footer-column-social">
+							<div class="footer-column-item">
+								<a href="" class="footer__link">LinkedIn</a>
+								<a href="" class="footer__link">Facebook</a>
+								<a href="" class="footer__link">Instagram</a>
+								<a href="" class="footer__link">Twitter</a>
+							</div>
+						</div>
+						<div class="footer-column-email">
+							<div class="footer-column-item">
+								<a href="mailto:seyrig@mail.com" class="footer__link email">seyrig@mail.com</a>
+								<a href="" class="footer__link email email--s">+ 55 6645 665544</a>
+							</div>
+						</div>
+					</div>
+					<div class="footer-arrow">
+						<a href="" class="footer__arrow">
+							<i class="fa fa-angle-up"></i>
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
